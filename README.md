@@ -9,13 +9,14 @@ Initial data cleaning and preparation.
 ### Purpose:
 ML prediction and SHAP (SHapley Additive exPlanations) analysis.
 
-- Applies ML models to predict target outcomes.
+- Applies ML models to predict surgery duration.
+- Perform Grid Search For Hyper-Parameter Tuning 
 - Uses SHAP to interpret feature importance and model decisions.
 ## 3. Create Confidence Range
 ### Purpose:
 Post-prediction evaluation using absolute percentage error (APE).
 
-- Categorizes predictions into four confidence levels:
+- Categories predictions into four confidence levels:
   - High Confidence: APE < 10%
   - Moderate Confidence: 10% ≤ APE < 25%
   - Low Confidence: 25% ≤ APE < 50%
