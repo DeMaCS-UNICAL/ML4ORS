@@ -25,7 +25,7 @@ Post-prediction evaluation using absolute percentage error (APE).
 # Getting Started
 
 ## Clone this repository:
-git clone [https://github.com/your-username/ml4ors.git](https://github.com/DeMaCS-UNICAL/ML4ORS.git)
+git clone [https://github.com/DeMaCS-UNICAL/ML4ORS.git](https://github.com/DeMaCS-UNICAL/ML4ORS.git)
 
 
 cd ml4ors
