@@ -35,3 +35,21 @@ pip install -r requirements.txt
 1. pre-processing.ipynb
 2. predict_ML4ORS.ipynb
 3. create_confidence_range.ipynb
+
+
+# ASP
+## Prerequisites
+Installation instructions for different Operating Systems building from sources or using Anaconda for Clingo v5.6.2 can be found here:
+https://github.com/potassco/clingo/blob/master/INSTALL.md, https://potassco.org/clingo/,  https://github.com/potassco/clingo/releases/tag/v5.6.2
+
+## Data
+
+Inside the ASP folder, there are 4 main folders containing the input files and 2 encoding files. The encoding files represent one (encoding.asp), the main encoding, and one containing the confidence values assigned to the different patients (confidence.asp). The folders are organized as follows: one containing the data obtained through the ML method (Pred), one with the mean for Departments (Dep), and one with the mean for Surgery (Surg), and the last one with real data (VBA).
+
+
+The encodings can be executed with the following command: 
+
+```clingo ASP/encoding.asp ASP/{Method}/{Hospital}/input_N.db --restart-on-model --parallel-mode=6 --time-limit=60```
+
+To use the confidence values can be used the following command:
+```clingo ASP/encoding.asp ASP/confidence.asp ASP/Pred/{Hospital}/input_N.db --restart-on-model --parallel-mode=6 --time-limit=60```
